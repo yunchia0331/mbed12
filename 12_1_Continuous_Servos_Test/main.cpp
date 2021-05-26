@@ -15,9 +15,10 @@ int main() {
    servo.period_ms(20);
 
    while(1) {
-      servo_control(100);
+      servo_control(0);
       ThisThread::sleep_for(2000ms);
-      servo_control(-100);
+      servo_control(0);
       ThisThread::sleep_for(2000ms);
+   
    }
 }
